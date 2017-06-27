@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import CreateIdea from './CreateIdea'
-import { IdeaList } from './IdeaList'
+import  IdeaList  from './IdeaList'
 import './App.css';
+
 
 class App extends Component {
   constructor() {
@@ -33,5 +34,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;

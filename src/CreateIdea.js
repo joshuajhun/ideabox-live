@@ -27,16 +27,19 @@ export default class CreateIdea extends Component {
     return (
       <div>
         <input type='text'
+               className= 'title-input'
                placeholder='title'
                name= 'jhun'
                value={this.state.title}
                onChange={this.handleChange.bind(this, 'title')} />
         <br/>
         <textarea placeholder='body'
+                  className='body-input'
                   value={this.state.body}
                   onChange={(e) => this.handleChange('body', e)} />
         <br/>
         <input type='submit'
+               className='submit-idea'
                onClick={this.handleSubmit} />
       </div>
     )
